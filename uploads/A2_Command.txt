@@ -1,0 +1,2 @@
+source /home/isaranod/nodevenv/map/11/bin/activate && cd /home/isaranod/map
+cloudlinux-selector restart --json --interpreter nodejs --app-root ~/map
