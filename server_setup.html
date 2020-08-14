@@ -43,14 +43,81 @@
                         </td></tr>
                         <tr><td>
 			<form action="http://isaranodejs.com/map/myfileupload" method="POST" enctype="multipart/form-data">
-                                <table bgcolor="grey">
+                                <table bgcolor="grey" border="1">
+
+                                <tr>
+                                 <td colspan="2" align="center"><h3>REDIS Connection Section</h3></td>
+                                 <td align="center"><h3>Parameter</h3></td>
+                                </tr>                                
+
+
+                                <tr>
+                                 <td>
+                                  <table><tr><td>
+                                   Please specify the region table name
+                                  </td></tr></table>
+                                 </td>
+                                 <td>
+                                  <table><tr><td>
+                                   <input type="text" name="region_tablename">
+                                  </td></tr></table>
+                                 </td>
+                                 <td>
+                                  <table><tr><td>
+                                   <input type="text" name="region_redis_parameter">
+                                  </td></tr></table>
+                                 </td>
+                                </tr>
+                                
+
+                                <tr>
+                                 <td>
+                                  <table><tr><td>
+                                   Please specify the orders table name
+                                  </td></tr></table>
+                                 </td>
+                                 <td>
+                                  <table><tr><td>
+                                   <input type="text" name="orders_tablename">
+                                  </td></tr></table>
+                                 </td>
+                                 <td>
+                                  <table><tr><td>
+                                   <input type="text" name="orders_redis_parameter">
+                                  </td></tr></table>
+                                 </td>
+                                </tr>
+
+
+                                <tr>
+                                 <td>
+                                  <table><tr><td>
+                                   Please specify the user data table name
+                                  </td></tr></table>
+                                 </td>
+                                 <td>
+                                  <table><tr><td>
+                                   <input type="text" name="user_tablename">
+                                  </td></tr></table>
+                                 </td>
+                                 <td>
+                                  <table><tr><td>
+                                   <input type="text" name="user_redis_parameter">
+                                  </td></tr></table>
+                                 </td>
+                                </tr>
+
+
+                                <tr><td colspan="3" align="center"><h3>Upload Data File Section</h3></td></tr>
+
+
                                 <tr>
                                  <td>
                                   <table><tr><td>
 				   Please upload Region Data File
                                   </td></tr></table> 
                                  </td>
-                                 <td>
+                                 <td colspan="2">
                                   <table><tr><td>
                                   <!--<input type="text" name="region_data_text"  placeholder="Region Data" size="30">-->
                                   </td><td>
@@ -64,7 +131,7 @@
 				   Please upload Orders Data File
                                   </tr></tr></table> 
                                  </td>
-                                 <td>
+                                 <td colspan="2">
                                   <table><tr><td>
                                   <!--<input type="text" name="orders_data_text"  placeholder="Orders Data" size="30">-->
                                   </td><td>
@@ -73,7 +140,13 @@
                                  </td>
                                 </tr>
                                 <tr>
-                                 <td colspan="2" align="center">
+                                 <td colspan="3" align="center">
+                                  Please pick location: <input type="text" name="city">
+                                  Please pick json or map: <input type="text" name="json_map">
+                                 </td>
+                                </tr>
+                                <tr>
+                                 <td colspan="3" align="center">
 				  <input type="submit">
                                  </td>
                                  </tr>
